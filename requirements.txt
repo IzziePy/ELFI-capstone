@@ -1,0 +1,8 @@
+pandas>=2.2
+numpy>=1.26
+openpyxl>=3.1     # nur für den Excel-Export (CREATE_EXCEL = True)
+matplotlib>=3.8
+seaborn>=0.13
+nltk>=3.8
+scikit-learn>=1.4
+tqdm>=4.66
