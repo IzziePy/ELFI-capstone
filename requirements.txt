@@ -6,3 +6,6 @@ seaborn>=0.13
 nltk>=3.8
 scikit-learn>=1.4
 tqdm>=4.66
+
+
+jinja2
