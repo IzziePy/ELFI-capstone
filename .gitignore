@@ -2,6 +2,7 @@
 
 data/
 prep/
+reports/
 
 # MAC OS
 .DS_Store
