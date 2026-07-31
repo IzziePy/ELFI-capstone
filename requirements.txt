@@ -9,3 +9,6 @@ tqdm>=4.66
 
 
 jinja2
+fg-data-profiling
+ipywidgets
+wordcloud>=1.9
