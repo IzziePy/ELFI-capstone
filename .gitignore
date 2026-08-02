@@ -3,6 +3,8 @@
 data/
 prep/
 reports/
+private/
+
 
 # MAC OS
 .DS_Store
