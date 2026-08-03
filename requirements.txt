@@ -1,14 +1,34 @@
+# Data handling
 pandas>=2.2
 numpy>=1.26
-openpyxl>=3.1     # nur für den Excel-Export (CREATE_EXCEL = True)
+openpyxl>=3.1
+
+# Visualisation
 matplotlib>=3.8
 seaborn>=0.13
-nltk>=3.8
-scikit-learn>=1.4
-tqdm>=4.66
-
-
-jinja2
-fg-data-profiling
-ipywidgets
 wordcloud>=1.9
+
+# Utilities
+tqdm>=4.66
+ipywidgets
+jinja2
+
+# Machine Learning
+scikit-learn>=1.4
+
+# NLP
+nltk>=3.8
+
+# Embeddings
+sentence-transformers>=3.0
+torch>=2.3
+
+# Profiling
+ydata-profiling>=4.12
+
+# Transformer models
+torch>=2.3
+transformers>=4.45
+
+# German sentiment
+germansentiment>=1.1
