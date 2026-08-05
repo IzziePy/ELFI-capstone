@@ -288,4 +288,4 @@
 - Die Themenbereiche weisen gute psychometrische Eigenschaften auf.
 - Organisationsvergleiche sind problemlos möglich.
 - Die Freitextdaten bieten eine hervorragende Grundlage für NLP-, Feature-Engineering- und Machine-Learning-Analysen.
-- Der Datensatz eignet sich sehr gut als Entwicklungs-, Test- und Benchmark-Datensatz für den Vergleich mit den realen High5-Daten.
+- Der Datensatz eignet sich sehr gut als Entwicklungs-, Test- und Benchmark-Datensatz für den Vergleich mit den realen Daten aus der Mitarbeiterbefragung .

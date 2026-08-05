@@ -1,12 +1,14 @@
 # Data handling
 pandas>=2.2
 numpy>=1.26
+
 openpyxl>=3.1
 
 # Visualisation
 matplotlib>=3.8
 seaborn>=0.13
 wordcloud>=1.9
+plotly>=6.2.0
 
 # Utilities
 tqdm>=4.66
@@ -29,6 +31,17 @@ ydata-profiling>=4.12
 # Transformer models
 torch>=2.3
 transformers>=4.45
+sentence-transformers>=3.0
 
 # German sentiment
 germansentiment>=1.1
+
+# Topic Modelling
+bertopic>=0.16
+
+
+umap-learn>=0.5
+hdbscan>=0.8
+
+# Topic Coherence
+gensim>=4.3.3
