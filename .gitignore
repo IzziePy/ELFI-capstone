@@ -6,9 +6,20 @@ reports/
 private/
 archive/
 
+# trained model artefacts (~500 MB each, regenerated from the notebooks)
+models/
+*.safetensors
+*.pkl
+*.joblib
+
+# MS Office lock/temp files
+~$*.pptx
+~$*.docx
+~$*.xlsx
 
 # MAC OS
 .DS_Store
+Thumbs.db
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
