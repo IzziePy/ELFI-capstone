@@ -1,0 +1,13 @@
+﻿bereich_key;abteilungs_id;bereich_clean;bereich_ebene;organisation;division
+1;KE-01;KE-01 (Kernprozesse Nord);KE-01;Musterorganisation;KE
+2;KE-02;KE-02 (Kernprozesse Süd);KE-02;Musterorganisation;KE
+3;KE-03;KE-03 (Kernprozesse Mitte);KE-03;Musterorganisation;KE
+4;MA-01;MA-01 (Marktsegment Handel);MA-01;Musterorganisation;MA
+5;MA-02;MA-02 (Marktsegment Industrie);MA-02;Musterorganisation;MA
+6;MA-03;MA-03 (Marktsegment Öffentlich);MA-03;Musterorganisation;MA
+7;PL-01;PL-01 (Plattform Entwicklung);PL-01;Musterorganisation;PL
+8;PL-02;PL-02 (Plattform Betrieb);PL-02;Musterorganisation;PL
+9;PL-03;PL-03 (Plattform Datenmanagement);PL-03;Musterorganisation;PL
+10;ZE-01;ZE-01 (Zentralfunktion Personal);ZE-01;Musterorganisation;ZE
+11;ZE-02;ZE-02 (Zentralfunktion Finanzen);ZE-02;Musterorganisation;ZE
+12;ZE-03;ZE-03 (Zentralfunktion Recht);ZE-03;Musterorganisation;ZE

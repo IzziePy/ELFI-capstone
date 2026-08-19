@@ -1,10 +1,12 @@
 # data and preparation
 
 data/
-prep/
+00_preparation/
 reports/
 private/
-archive/
+00_archive/
+notebooks_high5/
+00_presetation_with_notes/
 
 # trained model artefacts (~500 MB each, regenerated from the notebooks)
 models/
@@ -239,3 +241,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Arbeitsverzeichnis fuer Entwuerfe und Zwischenstaende
+tmp/
+!tmp/README.md

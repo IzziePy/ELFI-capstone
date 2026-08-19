@@ -1,0 +1,42 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Iris Detemple
+
+This licence applies to everything in this repository that is not source code:
+the README, SETUP.md, the process documentation, the prose in the notebooks'
+markdown cells, the figures, the slide decks, and the synthetic dataset.
+
+The source code — the code cells in the notebooks and any scripts — is covered
+by the MIT License in LICENSE instead.
+
+You are free to:
+
+  Share    copy and redistribute the material in any medium or format
+  Adapt    remix, transform, and build upon the material for any purpose,
+           including commercially
+
+Under the following terms:
+
+  Attribution
+           You must give appropriate credit, provide a link to the licence,
+           and indicate if changes were made. You may do so in any reasonable
+           manner, but not in any way that suggests the licensor endorses you
+           or your use.
+
+  No additional restrictions
+           You may not apply legal terms or technological measures that
+           legally restrict others from doing anything the licence permits.
+
+The full legal code is at:
+https://creativecommons.org/licenses/by/4.0/legalcode
+A plain-language summary is at:
+https://creativecommons.org/licenses/by/4.0/
+
+A credit line that satisfies the attribution term:
+
+  ELFI — Emotional & Latent Feedback Interpretation, Iris Detemple,
+  https://github.com/IzziePy/ELFI-capstone, CC BY 4.0
+
+Note on the models and word lists this project uses: they are not covered by
+either licence here. They carry their own terms, and the sources are listed in
+REFERENCES.md.

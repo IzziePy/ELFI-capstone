@@ -1,88 +1,129 @@
+# ELFI – Emotional & Latent Feedback Interpretation
 
-***
+## Project Description
 
-# ELFI – Emotional & Latent Feedback Interpretation (ENG)
+### Background
 
-## Abstract
-Within the scope of this project, a solution for the sentiment and cluster analysis of **German-language** free-text responses from employee surveys is being developed. The goal is to systematically evaluate qualitative feedback and generate actionable insights. 
+Employee surveys generate large volumes of qualitative feedback. While quantitative survey results can be analysed and reported efficiently, free-text comments often remain underused despite containing valuable information about employee experiences, concerns, and opportunities for improvement.
 
-The solution is based on modern Natural Language Processing (NLP) methods and is visualized in Power BI as a dashboard. Free texts are read from a defined data source, analyzed, and the results are written back into a separate target table. The analysis covers both the emotional tone (sentiment) and the thematic grouping (clustering) of the texts. 
+ELFI (Emotional & Latent Feedback Interpretation) was developed to make employee feedback more accessible, scalable, and actionable through Natural Language Processing (NLP) and modern analytics techniques.
 
-The technical implementation is designed to be scalable for a data volume of approximately 500 free-text responses per survey wave. The project contributes to data-driven organizational development and supports managers in interpreting employee feedback. In the long term, the solution is to be automated and serve as a reusable analysis module for other survey formats.
+---
 
-### Project Sub-goals:
+## Project Objective
 
-1. **Requirements Analysis and Conception**
-   * Definition of functional and technical requirements.
-   * Selection of suitable methods and models for sentiment and topic analysis (e.g., NLP models, clustering algorithms).
-   * Definition of the data structure and interfaces in Power BI.
+The objective of ELFI is to transform German-language employee comments into structured analytical signals that support data-driven organisational development.
 
-2. **Data Integration**
-   * Establishment of a pipeline to extract free-text data from the existing data source.
-   * Ensuring data quality and preprocessing (e.g., cleaning, tokenization, language checking).
+The solution combines core-affect measurement, topic discovery, engagement indicators, and interactive reporting to help organisations understand employee feedback at scale.
 
-3. **Development of Analysis Components**
-   * Implementation of sentiment analysis to evaluate the emotional tone of individual texts.
-   * Development of a clustering mechanism for the thematic grouping of free-text entries.
-   * Validation of the analysis results based on test data.
+The project addresses three central questions:
 
-4. **Integration into Power BI**
-   * Writing back the analysis results (sentiment values and cluster assignments) into a target table in Power BI.
-   * Ensuring the traceability and transparency of the analysis results in reporting.
+- How do employees feel?
+- What are employees talking about?
+- Which topics and affective patterns are associated with engagement and organisational outcomes?
 
-5. **Testing, Quality Assurance, and Documentation**
-   * Execution of functional tests and quality assurance measures.
-   * Creation of documentation.
+---
 
-6. **Possible Next Steps**
-   * Automation of the solution.
-   * Handover of the solution to operational business.
-   * Training of relevant stakeholders.
-   * Definition of a maintenance and further development process.
+## Scope
 
-<br />
+ELFI processes free-text comments from employee surveys and enriches them with analytical indicators.
 
-***
+The solution includes:
 
-# ELFI – Emotional & Latent Feedback Interpretation (ENG)
+- Valence measurement (pleasant vs. unpleasant experiences)
+- Arousal measurement (activated vs. deactivated experiences)
+- Circumplex-based mapping of core affect
 
-## Abstract
-Im Rahmen dieses Projekts wird eine Lösung zur Sentiment- und Clusteranalyse von **deutschsprachigen** Freitexten aus Mitarbeitenden-Befragungen entwickelt. Ziel ist es, qualitative Rückmeldungen systematisch auszuwerten und daraus verwertbare Erkenntnisse zu generieren. 
+Valence and arousal together are *core affect*, not emotion. Named emotions such as
+anger or disappointment are built on top of core affect through learned concepts and
+context, and ELFI does not attempt to recover them. What it measures is the affective
+substrate; what it reports are positions in that space, never emotion labels.
+- Topic modelling and thematic clustering
+- Automated data-processing pipelines
+- Interactive Power BI reporting
 
-Die Lösung basiert auf modernen Methoden der natürlichen Sprachverarbeitung (NLP) und wird in Power BI als Dashboard abgebildet. Dabei werden Freitexte aus einer definierten Datenquelle ausgelesen, analysiert und die Ergebnisse in eine separate Zieltabelle zurückgeschrieben. Die Analyse umfasst sowohl die emotionale Tonalität (Sentiment) als auch die thematische Gruppierung (Cluster) der Texte. 
+The resulting metrics and classifications are written back to structured tables and can be integrated into existing reporting environments.
 
-Die technische Umsetzung erfolgt skalierbar für eine Datenmenge von ca. 500 Freitexten pro Erhebungswelle. Das Projekt leistet einen Beitrag zur datenbasierten Organisationsentwicklung und unterstützt Führungskräfte bei der Interpretation von Mitarbeitenden-Feedback. Die Lösung soll langfristig automatisiert werden und als wiederverwendbares Analysemodul für weitere Befragungsformate dienen.
+---
 
-### Teilziele des Projekts:
+## Methodological Approach
 
-1. **Anforderungsanalyse und Konzeption**
-   * Definition der funktionalen und technischen Anforderungen.
-   * Auswahl geeigneter Methoden und Modelle zur Sentiment- und Themenanalyse (z. B. NLP-Modelle, Clustering-Algorithmen).
-   * Festlegung der Datenstruktur und Schnittstellen in Power BI.
+The project combines multiple NLP techniques and analytical methods:
 
-2. **Datenintegration**
-   * Aufbau einer Pipeline zur Extraktion der Freitextdaten aus der bestehenden Datenquelle.
-   * Sicherstellung der Datenqualität und Vorverarbeitung (z. B. Bereinigung, Tokenisierung, Sprachprüfung).
+- Transformer-based language models
+- Sentiment and affect analysis
+- Lexicon-based affective scoring
+- Topic modelling
+- Statistical validation against survey measures
+- Data visualisation in Power BI
 
-3. **Entwicklung der Analysekomponenten**
-   * Implementierung der Sentimentanalyse zur Bewertung der emotionalen Tonalität einzelner Texte.
-   * Entwicklung eines Clustering-Mechanismus zur thematischen Gruppierung der Freitextbeiträge.
-   * Validierung der Analyseergebnisse anhand von Testdaten.
+Particular attention is given to model validation and interpretability. Wherever possible, analytical measures are evaluated against independent survey criteria and external reference datasets.
 
-4. **Integration in Power BI**
-   * Zurückschreiben der Analyseergebnisse (Sentimentwerte und Clusterzuordnung) in eine Zieltabelle in Power BI.
-   * Sicherstellung der Nachvollziehbarkeit und Transparenz der Analyseergebnisse im Reporting.
+---
 
-5. **Test, Qualitätssicherung und Dokumentation**
-   * Durchführung von Funktionstests und Qualitätssicherungsmaßnahmen.
-   * Erstellung einer Dokumentation.
+## Deliverables
 
-6. **Mögliche nächste Schritte**
-   * Automatisierung der Lösung.
-   * Übergabe der Lösung an den operativen Betrieb.
-   * Schulung relevanter Stakeholder.
-   * Definition eines Wartungs- und Weiterentwicklungsprozesses.
+### 1. Validated Affect Measures
 
+- Valence score
+- Arousal score
+- Circumplex coordinates
 
+### 2. Topic Analytics
 
-***
+- Topic identification
+- Topic prevalence
+- Topic-level sentiment and affect measures
+
+### 3. Data Processing Pipeline
+
+- Automated text preprocessing
+- Model execution
+- Structured result export
+
+### 4. Power BI Dashboard
+
+- Interactive exploration of employee comments
+- Affective and thematic reporting
+- Filters for organisational units and survey waves
+- Action-oriented reporting views for organisational stakeholders
+
+### 5. Documentation
+
+- Methodology
+- Validation results
+- Technical implementation
+- Operational recommendations
+
+---
+
+## Expected Benefits
+
+The solution enables organisations to:
+
+- Analyse large volumes of employee comments consistently
+- Identify affective patterns in employee feedback
+- Detect recurring themes and concerns
+- Support evidence-based decision-making
+- Reduce manual effort in qualitative analysis
+- Scale feedback analysis across survey formats and organisational units
+
+---
+
+## Future Development
+
+Potential future enhancements include:
+
+- Full automation of the processing pipeline
+- Integration into recurring employee-listening processes
+- Support for additional survey formats
+- Multilingual language support
+- Enhanced predictive analytics and trend monitoring
+
+---
+
+## Project Outcome
+
+ELFI demonstrates how modern NLP methods can be combined with organisational analytics to transform unstructured employee feedback into actionable insights.
+
+The project delivers both a validated analytical methodology and an operational reporting solution that supports employee listening at scale. By combining core-affect measurement, topic modelling, and interactive reporting, ELFI bridges the gap between qualitative employee feedback and evidence-based organisational decision-making.

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "ELFI — Emotional & Latent Feedback Interpretation"
+message: "If you use ELFI or build on it, please credit it as follows."
+type: software
+authors:
+  - given-names: Iris
+    family-names: Detemple
+repository-code: "https://github.com/IzziePy/ELFI-capstone"
+abstract: >-
+  ELFI turns German-language free-text comments from an employee survey into
+  two measured dimensions of core affect — valence and arousal — plus the
+  themes people write about, and exports the result as a Power BI model. Model
+  choices are validated against the survey's own closed items rather than
+  against manual annotation. The repository runs end to end on a synthetic
+  dataset; the real survey data is confidential and not part of it.
+keywords:
+  - natural language processing
+  - employee survey
+  - sentiment analysis
+  - core affect
+  - circumplex model
+  - topic modelling
+  - German
+license: MIT
+license-url: "https://github.com/IzziePy/ELFI-capstone/blob/main/LICENSE"
+version: 1.0.0
+date-released: "2026-08-19"

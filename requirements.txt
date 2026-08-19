@@ -1,47 +1,83 @@
-# Data handling
+# ============================================================
+# ELFI — Python dependencies
+# ============================================================
+# Grouped by what needs them. The comment after each group says which part of the
+# project it serves, so nothing has to be guessed at when trimming the file later.
+#
+# Python 3.11.3 — see .python-version
+#
+# NOT installed via pip: Ollama. It is a separate application that runs the language
+# models locally. See the README for installation and `ollama pull gemma2:9b`.
+# ------------------------------------------------------------
+
+
+# --- Notebook environment ------------------------------------
+# Needed to open and run any of the notebooks at all.
+jupyterlab>=4.0
+ipykernel>=6.29
+ipywidgets>=8.1          # progress bars via tqdm.auto render through this
+
+
+# --- Data handling -------------------------------------------
+# All notebooks.
 pandas>=2.2
 numpy>=1.26
+pyarrow>=15.0            # parquet between notebooks: keeps dtypes, avoids decimal-comma issues
+openpyxl>=3.1            # reads the raw .xlsx survey exports in data/
 
-openpyxl>=3.1
 
-# Visualisation
-matplotlib>=3.8
-seaborn>=0.13
-wordcloud>=1.9
-plotly>=6.2.0
+# --- Local language models -----------------------------------
+# Notebooks 02, 03, 05 and the synthetic data generator. The HTTP calls go to a local
+# Ollama service; the `ollama` package is the client used by the older notebooks in
+# private/.
+requests>=2.31
+ollama>=0.3
 
-# Utilities
-tqdm>=4.66
-ipywidgets
-jinja2
 
-# Machine Learning
-scikit-learn>=1.4
-
-# NLP
-nltk>=3.8
-
-# Embeddings
-sentence-transformers>=3.0
-torch>=2.3
-
-# Profiling
-ydata-profiling>=4.12
-
-# Transformer models
+# --- Transformer models --------------------------------------
+# Notebook 02 (German sentiment), notebook 03 (German-Emotions),
+# notebook 05 (sentence embeddings for BERTopic).
 torch>=2.3
 transformers>=4.45
 sentence-transformers>=3.0
+germansentiment>=1.1     # convenience wrapper, used by the notebooks in private/
 
-# German sentiment
-germansentiment>=1.1
 
-# Topic Modelling
+# --- Topic modelling -----------------------------------------
+# Notebook 05. umap-learn and hdbscan are BERTopic's clustering stack; gensim is only
+# used for topic coherence in the earlier work under private/.
 bertopic>=0.16
-
-
 umap-learn>=0.5
 hdbscan>=0.8
-
-# Topic Coherence
 gensim>=4.3.3
+
+
+# --- Machine learning and statistics -------------------------
+# Notebook 05 (cross-validated ridge, TF-IDF, random forest),
+# notebook 04 (kernel density estimate for the circumplex).
+scikit-learn>=1.4
+scipy>=1.11
+
+
+# --- Visualisation -------------------------------------------
+# matplotlib is used by the notebooks in notebooks/; seaborn only by the earlier
+# exploratory work in private/.
+matplotlib>=3.8
+seaborn>=0.13
+
+
+# --- Utilities -----------------------------------------------
+tqdm>=4.66               # progress on the long model runs
+
+
+# --- Pipeline orchestration ----------------------------------
+# Only needed if one notebook executes another, as private/11_pipeline does.
+nbformat>=5.10
+nbclient>=0.10
+
+
+# --- Earlier exploratory work --------------------------------
+# Not imported by anything in notebooks/. Commented out because only the archived EDA
+# notebooks use them — uncomment if that work is being re-run.
+# wordcloud>=1.9
+# nltk>=3.8
