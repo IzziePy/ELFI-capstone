@@ -14,7 +14,7 @@ The notebooks expect their data in a folder called `synthetic_dataset`, **next t
 your-clone/
 ├── notebooks/
 │   ├── 01_the_data.ipynb … 06_the_pipeline.ipynb
-│   └── PROZESS.md
+│   └── METHOD.md
 └── synthetic_dataset/
     ├── synthetic/
     │   ├── synthetic_data_transformed.csv          the dataset

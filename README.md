@@ -95,16 +95,15 @@ Two aspects were intentionally changed and are discussed wherever they affect th
 What carries over between the two datasets and what does not is discussed where it
 matters: the **order** in which the methods rank is stable, the **effect sizes** are
 not. Generated text carries a clearer signal than real feedback, so the numbers here
-come out friendlier throughout. [PROZESS.md](notebooks/PROZESS.md) says this per step.
+come out friendlier throughout. [METHOD.md](notebooks/METHOD.md) says this per step.
 
 ---
 
 ## 📑 Table of Contents
 
 * [**Setup**](SETUP.md) — Python environment, Ollama, and where the data folder goes
-* [**The process, step by step**](notebooks/PROZESS.md) — what each notebook does, what
+* [**The method, step by step**](notebooks/METHOD.md) — what each notebook does, what
   comes out, what it is validated against, and the quality measures in plain terms
-  (also as [plain text](notebooks/PROZESS.txt))
 * [Project Description](project_setup/project_description.md)
 * [Decision Log](project_setup/decision_log.md)
 
